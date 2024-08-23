@@ -1,0 +1,27 @@
+{
+  "name": "arcalive-ban-tool",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@topcli/prompts": "^2.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "got": "^14.4.2",
+    "luxon": "^3.2.1",
+    "tough-cookie": "^4.1.2",
+    "typia": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.2.0",
+    "@types/tough-cookie": "^4.0.2",
+    "@types/tough-cookie-file-store": "^2.0.4",
+    "tough-cookie-file-store": "^2.0.3",
+    "ts-patch": "^3.2.1",
+    "typescript": "^5.5.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node ./dist/index.js",
+    "prepare": "ts-patch install && typia patch"
+  },
+  "packageManager": "pnpm@9.8.0"
+}
