@@ -269,4 +269,4 @@ for (const user of response) {
 
 fs.writeFileSync("cache.json", JSON.stringify(cache));
 
-await client("u/logout");
+// await client("u/logout");
